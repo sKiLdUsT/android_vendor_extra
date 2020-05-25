@@ -16,12 +16,8 @@ $(call inherit-product, vendor/gapps/common/common-vendor.mk)
 
 endif
 
-# Recovery ADB keys
-PRODUCT_COPY_FILES += \
-    vendor/extra/adb_keys:recovery/root/adb_keys
-
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
 # Use own updater
-PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://lineage.stricted.net/api/v1/{device}/{type}/{incr}
+PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://lineage.skildust.com/api/v1/{device}/{type}/{incr}

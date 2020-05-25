@@ -1,3 +1,3 @@
 <resources>
-  <string name="update_server_url" translatable="false">https://lineage.stricted.net/api/v1/{device}/{type}/{incr}</string>
+  <string name="update_server_url" translatable="false">https://lineage.skildust.com/api/v1/{device}/{type}/{incr}</string>
 </resources>
