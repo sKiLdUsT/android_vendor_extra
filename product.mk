@@ -12,7 +12,9 @@ endif
 ifeq ($(WITH_GAPPS),true)
 
 # mindthegapps
-$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+GAPPS_VARIANT := stock
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
 endif
 
